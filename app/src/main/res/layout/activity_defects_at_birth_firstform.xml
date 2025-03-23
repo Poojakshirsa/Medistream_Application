@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ThreeToSix.Defects_at_birth_firstform">
+
+    <!-- Toolbar with improved design -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/primary_color"
+        android:elevation="6dp"
+        android:padding="12dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/toolbarTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="School Health"
+            android:textColor="@android:color/white"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/toolbarImage"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="end"
+            android:padding="5dp"
+            android:src="@drawable/form" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <!-- Scrollable Content -->
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Defects at Birth"
+                android:textColor="@color/primary_color"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:paddingBottom="8dp" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• If yes, then tick below fields"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:paddingBottom="12dp" />
+
+            <!-- GridLayout for Checkboxes -->
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="2"
+                android:rowCount="4"
+                android:padding="16dp">
+
+                <CheckBox
+                    android:id="@+id/defect_eyes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="12dp"
+                    android:text=" Eyes \n Abnormality" />
+
+                <CheckBox
+                    android:id="@+id/defect_head"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="12dp"
+                    android:text=" Head Size \n Abnormality" />
+
+                <CheckBox
+                    android:id="@+id/defect_ears"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="12dp"
+                    android:text=" Ears \n Abnormality" />
+
+                <CheckBox
+                    android:id="@+id/defect_limbs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="12dp"
+                    android:text=" Limbs \n Deformity" />
+
+                <CheckBox
+                    android:id="@+id/defect_lips_palate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="12dp"
+                    android:text=" Lips &amp; Palate \n Cleft" />
+
+                <CheckBox
+                    android:id="@+id/defect_neck"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="12dp"
+                    android:text=" Neck \n Abnormality" />
+
+                <CheckBox
+                    android:id="@+id/defect_spine"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="12dp"
+                    android:text=" Spine \n Deformity" />
+
+                <CheckBox
+                    android:id="@+id/defect_heart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="12dp"
+                    android:text=" Congenital \n Heart Disease" />
+            </GridLayout>
+            <TextView
+                android:id="@+id/a8_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:text="Features Suggestive of Down's Syndrome"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <CheckBox
+                android:id="@+id/a8a_eye"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="Eye: Upward slant of eyes and/or epicanthic fold" />
+
+            <CheckBox
+                android:id="@+id/a8b_nose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text=" Nose: Depressed Bridge" />
+
+            <CheckBox
+                android:id="@+id/a8c_ears"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="Ears: Low set ears" />
+
+            <CheckBox
+                android:id="@+id/a8d_palm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text=" Palm: Single crease across centre of palm\n (Simian crease)" />
+
+            <CheckBox
+                android:id="@+id/a8e_feet"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text=" Feet: Wide Gap between great and first toe" />
+
+            <TextView
+                android:id="@+id/button_read_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/white"
+                android:padding="2dp"
+                android:text="Read More..."
+                android:textAllCaps="false"
+                android:textColor="@color/primary_color"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_next"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="30dp"
+                android:background="@drawable/button_back"
+                android:text="Next"
+                android:padding="0dp"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="19dp"
+                />
+            <!-- Read More Button -->
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

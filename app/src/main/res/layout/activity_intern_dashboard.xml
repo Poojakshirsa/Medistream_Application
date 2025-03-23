@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Dashboard.InternDashboard">
+
+    <!-- Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar5"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/primary_color"
+        android:elevation="4dp"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="School Health"
+        app:titleTextColor="@color/white" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Select Correct Age Group"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar5" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView3">
+
+        <!-- Age Group: 3-6 Years -->
+        <LinearLayout
+            android:id="@+id/layout1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/card_bg"
+            android:elevation="8dp"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:layout_margin="10dp"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/kids" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3-6 Years"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_fill_form_3_6"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Fill Form"
+                android:backgroundTint="@color/primary_color"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/btn_view_form_3_6"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="View Form"
+                android:backgroundTint="#5C5555"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <!-- Age Group: 6-18 Years -->
+        <LinearLayout
+            android:id="@+id/layout2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/card_bg"
+            android:elevation="8dp"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:layout_margin="10dp"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/teen" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="6-18 Years"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_fill_form_6_18"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Fill Form"
+                android:backgroundTint="@color/primary_color"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/btn_view_form_6_18"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="View Form"
+                android:backgroundTint="#5C5555"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linearLayout">
+
+        <!-- Age Group: 3-6 Years -->
+        <LinearLayout
+            android:id="@+id/layout3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/card_bg"
+            android:elevation="8dp"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:layout_margin="10dp"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/teacher" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Teacher Form"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_fill_form_teacher"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Fill Form"
+                android:backgroundTint="@color/primary_color"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/btn_view_form_teacher"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="View Form"
+                android:backgroundTint="#5C5555"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <!-- Age Group: 6-18 Years -->
+        <LinearLayout
+            android:id="@+id/layoutdownload"
+            android:layout_width="0dp"
+            android:layout_height="210dp"
+            android:layout_weight="1"
+            android:background="@drawable/card_bg"
+            android:elevation="8dp"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:layout_margin="10dp"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/download" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Downloads"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

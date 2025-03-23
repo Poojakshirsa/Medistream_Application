@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_add_admin"
+        android:icon="@drawable/baseline_person_add_24"
+        android:title="Add intern" />
+    <item
+        android:id="@+id/nav_admin_list"
+        android:icon="@drawable/emptylist"
+        android:title="Intern List" />
+    <item
+        android:id="@+id/nav_download"
+        android:icon="@drawable/baseline_download_24"
+        android:title=" Downloads" />
+</menu>

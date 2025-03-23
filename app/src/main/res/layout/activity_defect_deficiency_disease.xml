@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+        <!-- Static Toolbar -->
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar6"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/primary_color"
+            app:title="School Health"
+            app:titleTextColor="@color/white"
+            app:titleTextAppearance="@style/TextAppearance.Material3.ActionBar.Title"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme" />
+
+        <!-- Scrollable Content -->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="30dp">
+
+                        <!-- Section: Defects at Birth -->
+                        <TextView
+                            android:id="@+id/textView8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Defects At Birth"
+                            android:textColor="@color/primary_color"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:layout_marginBottom="8dp" />
+
+                        <CheckBox
+                            android:id="@+id/checkbox_visible_defect"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="16dp" />
+
+                        <!-- Section: Nutrition Deficiency Check -->
+                        <TextView
+                            android:id="@+id/textView7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Nutrition Deficiency Check"
+                            android:textColor="@color/primary_color"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginBottom="8dp" />
+
+                        <CheckBox
+                            android:id="@+id/checkbox_severe_anaemia"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp" />
+
+                        <CheckBox
+                            android:id="@+id/checkbox_vitamin_a_deficiency"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp" />
+
+                        <CheckBox
+                            android:id="@+id/checkbox_vitamin_d_deficiency"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp" />
+
+                        <CheckBox
+                            android:id="@+id/checkbox_goitre"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp" />
+
+                        <CheckBox
+                            android:id="@+id/checkbox_oedema_feet"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="16dp" />
+
+                        <!-- Section: Diseases -->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Diseases"
+                            android:textColor="@color/primary_color"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginBottom="8dp" />
+
+                        <CheckBox
+                            android:id="@+id/checkbox_convulsive_disorders"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp" />
+
+                        <CheckBox
+                            android:id="@+id/checkbox_otitis_media"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp" />
+
+                        <CheckBox
+                            android:id="@+id/checkbox_dental_condition"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp" />
+
+                        <CheckBox
+                            android:id="@+id/checkbox_skin_condition"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp" />
+
+                        <CheckBox
+                            android:id="@+id/checkbox_rheumatic_heart_disease"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp" />
+
+                        <CheckBox
+                            android:id="@+id/checkbox_others"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="16dp" />
+
+                        <!-- Navigation Button -->
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/NextButton"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:text="Next"
+                            android:textAllCaps="false"
+                            android:textStyle="bold"
+                            android:textSize="18dp"
+                            android:gravity="center"
+                            android:padding="0dp"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@drawable/button_back"
+                            android:layout_marginTop="16dp"
+                            android:textColor="@color/white" />
+                </LinearLayout>
+        </ScrollView>
+</LinearLayout>

@@ -1,0 +1,34 @@
+<!-- item_school_data.xml -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/schoolNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="School Name" />
+
+    <TextView
+        android:id="@+id/schoolAddressTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="School Address" />
+
+    <TextView
+        android:id="@+id/childNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Child Name" />
+
+    <TextView
+        android:id="@+id/childAgeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Child Age" />
+
+    <!-- Add more TextViews for other fields -->
+</LinearLayout>

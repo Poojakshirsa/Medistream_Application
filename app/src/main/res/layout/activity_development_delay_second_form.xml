@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SixToEighteen.DevelopmentDelaySecondForm">
+
+    <!-- Toolbar Section -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/primary_color"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:elevation="4dp"
+        app:title=" School Health"
+        app:titleTextColor="@color/white" />
+
+    <!-- Scrollable Content -->
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Header Section -->
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Developmental Delays (6-9 years)"
+                android:textColor="@color/primary_color"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="16dp"
+                android:gravity="center" />
+
+            <!-- Checkboxes -->
+            <CheckBox
+                android:id="@+id/checkbox_difficulty_in_seeing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Does the child have difficulty in seeing, either during day or night? (without spectacles)"
+                android:padding="8dp"
+                android:layout_marginBottom="8dp" />
+
+            <CheckBox
+                android:id="@+id/checkbox_delay_in_walking"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Did the child have any delay in walking compared to others of the same age?"
+                android:padding="8dp"
+                android:layout_marginBottom="8dp" />
+
+            <CheckBox
+                android:id="@+id/checkbox_stiffness_or_floppiness"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Does the child have stiffness or reduced strength in arms or legs?"
+                android:padding="8dp"
+                android:layout_marginBottom="8dp" />
+
+            <CheckBox
+                android:id="@+id/checkbox_fits_or_jerks"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Has the child ever had fits, spasms, or sudden jerks since birth?"
+                android:padding="8dp"
+                android:layout_marginBottom="8dp" />
+
+            <CheckBox
+                android:id="@+id/checkbox_difficulty_in_reading_writing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Does the child struggle with reading, writing, or simple calculations compared to classmates?"
+                android:padding="8dp"
+                android:layout_marginBottom="8dp" />
+
+            <CheckBox
+                android:id="@+id/checkbox_difficulty_in_speaking"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Does the child have difficulty speaking compared to others of the same age?"
+                android:padding="8dp"
+                android:layout_marginBottom="8dp" />
+
+            <CheckBox
+                android:id="@+id/checkbox_difficulty_in_hearing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Does the child have difficulty in hearing? (without hearing aids)"
+                android:padding="8dp"
+                android:layout_marginBottom="8dp" />
+
+            <CheckBox
+                android:id="@+id/checkbox_difficulty_in_learning"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Does the child find it difficult to learn new things compared to peers?"
+                android:padding="8dp"
+                android:layout_marginBottom="8dp" />
+
+            <CheckBox
+                android:id="@+id/checkbox_difficulty_in_attention"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Does the child have difficulty focusing on tasks at school, home, or play?"
+                android:padding="8dp"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Next Button -->
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/NextButton"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="Next"
+                android:background="@drawable/button_back"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textStyle="bold"
+
+                android:layout_marginTop="16dp"
+                android:padding="0dp" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

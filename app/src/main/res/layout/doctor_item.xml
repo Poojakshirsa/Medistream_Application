@@ -1,0 +1,50 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="160dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+    android:background="@drawable/card_bg"
+    android:padding="16dp"
+    android:elevation="10dp"
+    android:gravity="center_horizontal"
+    android:layout_gravity="center">
+
+    <!-- Image View with Rounded Corners -->
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imageViewAdmin"
+        android:layout_width="57dp"
+        android:layout_height="55dp"
+        android:layout_gravity="center"
+        android:scaleType="centerCrop"
+        android:src="@drawable/baseline_person_24"
+        app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay1.Rounded" />
+
+    <!-- Container for the TextViews -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:id="@+id/textViewName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:text="John Doe"
+            android:textStyle="bold"
+            android:layout_marginTop="1dp"/>
+
+        <TextView
+            android:id="@+id/textViewPhoneNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:text="+123 456 7890"
+            android:layout_marginTop="5dp" />
+    </LinearLayout>
+</LinearLayout>

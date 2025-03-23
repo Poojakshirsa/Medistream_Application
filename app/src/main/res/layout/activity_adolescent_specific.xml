@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- Static Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/primary_color"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:elevation="4dp"
+        app:title="School Health"
+        app:titleTextColor="@color/white" />
+
+    <!-- Scrollable Content -->
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Header Text -->
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Adolescent Specific Questionnaire (10-18 years)"
+                android:textColor="@color/primary_color"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="16dp"
+                android:gravity="center" />
+
+            <!-- Checkboxes for Questions -->
+            <CheckBox
+                android:id="@+id/checkbox_difficulty_handling_life_changes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="E1. Do you always find it difficult to handle things in your life that has resulted from changes occurring in your body? (If Y, Refer)"
+                android:padding="10dp"
+                android:layout_marginBottom="12dp" />
+
+            <CheckBox
+                android:id="@+id/checkbox_saying_no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="E2. Are you able to say 'NO' and leave the place when your friends pressurize you to smoke or drink with them?"
+                android:padding="10dp"
+                android:layout_marginBottom="12dp" />
+
+            <CheckBox
+                android:id="@+id/checkbox_feeling_tired_or_depressed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="E3. Do you feel unduly tired early in the morning or you feel depressed most of the time?"
+                android:padding="10dp"
+                android:layout_marginBottom="12dp" />
+
+            <CheckBox
+                android:id="@+id/checkbox_menstrual_cycles"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="E4. In case of females - Have your menstrual cycles started yet? (If not by 16 years, Refer)"
+                android:padding="10dp"
+                android:layout_marginBottom="12dp" />
+
+            <CheckBox
+                android:id="@+id/checkbox_regular_periods"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="E5. Do you have your periods every month (i.e. 28 ± 7 days)? (If N, Refer)"
+                android:padding="10dp"
+                android:layout_marginBottom="12dp" />
+
+            <CheckBox
+                android:id="@+id/checkbox_pain_while_urinating"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="E6. Do you experience any pain or burning sensation while urinating? (If Y, Refer)"
+                android:padding="10dp"
+                android:layout_marginBottom="12dp" />
+
+            <CheckBox
+                android:id="@+id/checkbox_discharge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="E7. Do you have any discharge/foul-smelling discharge from the genito-urinary area? (If Y, Refer)"
+                android:padding="10dp"
+                android:layout_marginBottom="12dp" />
+
+            <CheckBox
+                android:id="@+id/checkbox_extreme_pain_menstruation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="E8. Do you feel extreme pain during menstruation so much so that it stops you from doing routine activities/ attending schools? (If Y, Refer)"
+                android:padding="10dp"
+                android:layout_marginBottom="24dp" />
+
+            <!-- Next Button -->
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/Nextbutton"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="Next"
+                android:padding="0dp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textAllCaps="false"
+                android:background="@drawable/button_back"
+                android:textSize="18sp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="16dp" />
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

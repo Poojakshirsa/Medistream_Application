@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@color/white"
+    tools:context=".ThreeToSix.Deficiencies_Section_FirstForm">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/primary_color"
+        android:padding="10dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/toolbarTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="School Health"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/toolbarImage"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="end"
+            android:layout_marginStart="10dp"
+            android:paddingRight="10dp"
+            android:src="@drawable/form" />
+    </androidx.appcompat.widget.Toolbar>
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:orientation="vertical">
+
+            <!-- Section Title -->
+            <TextView
+                android:id="@+id/title_deficiency"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Deficiency Screening"
+                android:textColor="@color/primary_color"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="16dp"
+                android:gravity="center"/>
+
+            <!-- SAM related Checkboxes -->
+            <TextView
+                android:id="@+id/section_sam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SAM - Severe Acute Malnutrition"
+                android:textColor="@color/primary_color"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginTop="16dp"/>
+
+            <CheckBox
+                android:id="@+id/checkBox_b1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Weight for Height/Length: Refer if child is less than -3SD."
+                android:layout_marginTop="8dp" />
+
+            <CheckBox
+                android:id="@+id/checkBox_b2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Oedema- Bilateral pitting Oedema."
+                android:layout_marginTop="8dp" />
+
+            <!-- Severe Anaemia related Checkboxes -->
+            <TextView
+                android:id="@+id/section_anaemia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Severe Anaemia"
+                android:textColor="@color/primary_color"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginTop="16dp"/>
+
+            <CheckBox
+                android:id="@+id/checkBox_b3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Look for severe palmar pallor."
+                android:layout_marginTop="8dp" />
+
+            <CheckBox
+                android:id="@+id/checkBox_b4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vitamin A Deficiency: Night blindness/Bitot's spot."
+                android:layout_marginTop="8dp" />
+
+            <CheckBox
+                android:id="@+id/checkBox_b5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vitamin D Deficiency: Wrist widening/legs bowing."
+                android:layout_marginTop="8dp" />
+
+            <!-- Disease Section -->
+            <TextView
+                android:id="@+id/section_disease"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Disease Screening"
+                android:textColor="@color/primary_color"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginTop="16dp"/>
+
+            <CheckBox
+                android:id="@+id/checkBox_c1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Convulsive disorders: Unconsciousness/fits."
+                android:layout_marginTop="8dp" />
+
+            <CheckBox
+                android:id="@+id/checkBox_c2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Otitis Media: More than 3 episodes of ear discharge."
+                android:layout_marginTop="8dp" />
+
+            <CheckBox
+                android:id="@+id/checkBox_c3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dental condition: Demineralized/brown teeth."
+                android:layout_marginTop="8dp" />
+
+            <CheckBox
+                android:id="@+id/checkBox_c4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Skin condition: Itching, scaly patches."
+                android:layout_marginTop="8dp" />
+
+            <CheckBox
+                android:id="@+id/checkBox_c5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reactive airway disease: Wheezing, shortness of breath."
+                android:layout_marginTop="8dp" />
+
+            <!-- Next Button -->
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_next"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp"
+                android:layout_gravity="center"
+                android:background="@drawable/button_back"
+                android:text="Next"
+                android:padding="0dp"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="19sp"
+                app:layout_constraintWidth_percent="0.5"/>
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,41 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.MediStreamApplication" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:statusBarColor">@color/primary_color</item>
+    </style>
+    <style name="ShapeAppearanceOverlay1.Rounded" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">10dp</item> <!-- Adjust corner size as needed -->
+    </style>
+    <!-- Custom Bottom Navigation Text Appearance -->
+    <style name="CustomBottomNavTextAppearance" parent="TextAppearance.AppCompat.Body1">
+        <item name="android:textSize">180sp</item> <!-- Set your desired text size -->
+        <item name="android:textColor">@color/primary_color</item> <!-- Set your desired text color -->
+    </style>
+    <!-- Custom DatePicker Dialog Theme -->
+    <style name="CustomDatePickerDialog" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">@color/primary_color</item> <!-- Affects OK/Cancel buttons -->
+        <item name="android:textColorPrimary">@color/primary_color</item> <!-- Affects main text -->
+        <item name="android:colorControlActivated">@color/primary_color</item> <!-- Affects selected date -->
+        <item name="android:colorButtonNormal">@color/primary_color</item>
+        <item name="colorPrimary">@color/primary_color</item>
+        <item name="colorOnPrimary">@color/primary_color</item>
+
+    </style>
+    <style name="SectionTitle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/primary_color</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginTop">16dp</item>
+    </style>
+
+    <style name="CustomCheckBox">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+    <style name="Theme.MediStreamApplication" parent="Base.Theme.MediStreamApplication" />
+</resources>

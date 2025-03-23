@@ -1,0 +1,454 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    tools:context=".SixToEighteen.School_Information_Section_SecondForm">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar6"
+        android:layout_width="match_parent"
+        app:title="School Health"
+        app:titleTextColor="@color/white"
+        app:titleTextAppearance="@style/TextAppearance.Material3.ActionBar.Title"
+        android:layout_height="wrap_content"
+        android:background="@color/primary_color"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+
+       >
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:context=".School_Information_Section_FirstForm">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="36dp"
+                android:text="• School/College Information Section"
+                android:textColor="@color/primary_color"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/school_name_layout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                app:boxStrokeColor="@color/primary_color"
+                app:cursorColor="@color/primary_color"
+                app:hintTextColor="@color/primary_color"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView4">
+
+                <AutoCompleteTextView
+                    android:id="@+id/school_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="13dp"
+                    android:hint="Search School"
+                    android:completionThreshold="1" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/school_address_layout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                app:boxStrokeColor="@color/primary_color"
+                app:cursorColor="@color/primary_color"
+                app:hintTextColor="@color/primary_color"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/school_name_layout">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/school_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="13dp"
+                    android:hint="Address of School/College" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/date_of_checkup_layout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                app:boxStrokeColor="@color/primary_color"
+                app:cursorColor="@color/primary_color"
+                app:hintTextColor="@color/primary_color"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/school_address_layout">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/dateOfCheckup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:focusable="false"
+                    android:padding="13dp"
+                    android:hint="Date of Checkup"
+                    android:importantForAccessibility="yes"
+                    android:inputType="date" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="• Child Information Section"
+                android:textColor="@color/primary_color"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/date_of_checkup_layout" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/child_name_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                app:boxStrokeColor="@color/primary_color"
+                app:cursorColor="@color/primary_color"
+                app:hintTextColor="@color/primary_color"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView5">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/child_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="13dp"
+                    android:hint="Child Name" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/dob_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                app:boxStrokeColor="@color/primary_color"
+                app:cursorColor="@color/primary_color"
+                app:hintTextColor="@color/primary_color"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/child_name_layout">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/dob_editText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="13dp"
+                    android:focusable="false"
+                    android:clickable="true"
+                    android:hint="Date of Birth"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/child_age_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                app:boxStrokeColor="@color/primary_color"
+                app:cursorColor="@color/primary_color"
+                app:hintTextColor="@color/primary_color"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/dob_layout">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/child_age"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="13dp"
+                    android:hint="Age (in years, months)" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Spinner
+                android:id="@+id/GenderSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="20dp"
+                android:background="@drawable/spinnerback"
+
+                android:padding="13dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/child_age_layout" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/class_Section_layout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                app:boxStrokeColor="@color/primary_color"
+                app:cursorColor="@color/primary_color"
+                app:hintTextColor="@color/primary_color"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/GenderSpinner">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/Class_Section"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="13dp"
+                    android:hint="Class/Section" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/teacher_incharge_layout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                app:boxStrokeColor="@color/primary_color"
+                app:cursorColor="@color/primary_color"
+                app:hintTextColor="@color/primary_color"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/class_Section_layout">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/teacher_incharge_name"
+                    android:layout_width="match_parent"
+                    android:padding="13dp"
+                    android:layout_height="wrap_content"
+                    android:hint="In-charge Teacher Name" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/teacher_incharge_layout2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                app:boxStrokeColor="@color/primary_color"
+                app:cursorColor="@color/primary_color"
+                app:hintTextColor="@color/primary_color"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/teacher_incharge_layout">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/teacher_incharge_contact"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="13dp"
+                    android:hint="In-charge Teacher Contact" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="• Parent Information Section"
+                android:textColor="@color/primary_color"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/teacher_incharge_layout2"></TextView>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/father_name_layout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                app:boxStrokeColor="@color/primary_color"
+                app:cursorColor="@color/primary_color"
+                app:hintTextColor="@color/primary_color"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textView6">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/father_name"
+                    android:layout_width="match_parent"
+                    android:padding="13dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Father Name" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/mother_name_layout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                app:boxStrokeColor="@color/primary_color"
+                app:cursorColor="@color/primary_color"
+                app:hintTextColor="@color/primary_color"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/father_name_layout">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/mother_name"
+                    android:layout_width="match_parent"
+                    android:padding="13dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Mother Name" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/parent_contact_layout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                app:boxStrokeColor="@color/primary_color"
+                app:cursorColor="@color/primary_color"
+                app:hintTextColor="@color/primary_color"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/mother_name_layout">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/parent_contact"
+                    android:padding="13dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Parent Contact No." />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/tvhealth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="• Health Measurement Section"
+                android:textColor="@color/primary_color"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/parent_contact_layout">
+
+            </TextView>
+            <!-- Remaining TextInputLayouts for other fields like child_weight, child_height, etc. -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/weight_layout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                app:boxStrokeColor="@color/primary_color"
+                app:cursorColor="@color/primary_color"
+                app:hintTextColor="@color/primary_color"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvhealth">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/weight"
+                    android:layout_width="match_parent"
+                    android:padding="13dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Weight(Kg)" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/height_layout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                app:boxStrokeColor="@color/primary_color"
+                app:cursorColor="@color/primary_color"
+                app:hintTextColor="@color/primary_color"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/weight_layout">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/height"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="13dp"
+                    android:hint="Height(Cm)" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/BMI_layout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                app:boxStrokeColor="@color/primary_color"
+                app:cursorColor="@color/primary_color"
+                app:hintTextColor="@color/primary_color"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/height_layout">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/BMI"
+                    android:padding="13dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="BMI(Wt in Kg/ Ht in mt2)  " />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Spinner
+                android:id="@+id/BMI_Classification_layout"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_margin="20dp"
+                android:background="@drawable/spinnerback"
+                android:paddingStart="13dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/BMI_layout"></Spinner>
+
+            <Spinner
+                android:id="@+id/BP_layout"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_margin="20dp"
+                android:background="@drawable/spinnerback"
+                android:paddingStart="13dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/BMI_Classification_layout"></Spinner>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/nextButton"
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:layout_margin="20dp"
+                android:layout_marginBottom="100dp"
+                android:background="@drawable/button_back"
+                android:text="Next"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/BP_layout" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+
+
+</LinearLayout>

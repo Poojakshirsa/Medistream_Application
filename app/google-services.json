@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "640151698195",
+    "firebase_url": "https://fir-demo-be027-default-rtdb.firebaseio.com",
+    "project_id": "fir-demo-be027",
+    "storage_bucket": "fir-demo-be027.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:640151698195:android:2e195354b7f6c892e578e6",
+        "android_client_info": {
+          "package_name": "com.example.medistreamapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "640151698195-qv82gvg6g9r979p8ephf90h35brv610k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDhXvMlGnDi1LB4_wHUIXf3qROyWNa062E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "640151698195-qv82gvg6g9r979p8ephf90h35brv610k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

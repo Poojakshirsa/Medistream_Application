@@ -1,0 +1,42 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="160dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+    android:background="@drawable/card_bg"
+    android:padding="16dp"
+    android:elevation="15dp"
+    android:gravity="center_horizontal"> <!-- Center everything horizontally -->
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imageViewIntern"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:scaleType="centerCrop"
+        app:shapeAppearance="@style/ShapeAppearanceOverlay1.Rounded"
+        android:src="@drawable/user"
+        android:layout_gravity="center"/>
+
+    <!-- Container for the TextViews -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/textViewName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="Name" />
+
+        <TextView
+            android:id="@+id/textViewPhoneNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="Phone Number" />
+    </LinearLayout>
+</LinearLayout>

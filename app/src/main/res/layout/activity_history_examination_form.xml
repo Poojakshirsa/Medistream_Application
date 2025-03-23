@@ -1,0 +1,219 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+   >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+      >
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:background="@color/primary_color"
+            app:title="School Health"
+            app:titleTextColor="@color/white"
+            app:titleTextAppearance="@style/TextAppearance.Material3.ActionBar.Title"
+            android:layout_height="wrap_content">
+        </androidx.appcompat.widget.Toolbar>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal"
+            android:textColor="@color/primary_color"
+            android:textStyle="bold"
+            android:textSize="20sp"
+
+            android:text="Part – B: History &amp; Examination"
+            android:layout_height="wrap_content"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="20dp"
+            android:layout_height="wrap_content">
+        <!-- Header for Conditions -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="K/C/O: Diabetes / Hypertension / Ischemic Heart disease / Tuberculosis / Asthma / Any other"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp"
+            android:gravity="start"/>
+
+        <!-- Checkbox for Conditions -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="16dp">
+            <CheckBox
+                android:id="@+id/checkbox_diabetes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Diabetes"/>
+            <CheckBox
+                android:id="@+id/checkbox_hypertension"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hypertension"/>
+            <CheckBox
+                android:id="@+id/checkbox_ischemic_heart_disease"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ischemic Heart Disease"/>
+            <CheckBox
+                android:id="@+id/checkbox_tuberculosis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tuberculosis"/>
+            <CheckBox
+                android:id="@+id/checkbox_asthma"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Asthma"/>
+            <CheckBox
+                android:id="@+id/checkbox_any_other"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Any other"/>
+        </LinearLayout>
+
+        <!-- If yes: Since (Years) -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="If yes, since _______ years"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- TextInputLayout for Years -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:boxStrokeColor="@color/primary_color"
+            app:hintTextColor="@color/primary_color"
+            app:cursorColor="@color/primary_color"
+            android:layout_marginBottom="16dp">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edit_text_since_years"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:padding="13dp"
+                android:hint="Enter years"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Details of Medication -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Details of Medication related to it:"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- TextInputLayout for Medication Details -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            app:boxStrokeColor="@color/primary_color"
+            app:hintTextColor="@color/primary_color"
+            app:cursorColor="@color/primary_color"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edit_text_medication_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="13dp"
+                android:hint="Enter medication details"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Regularity of Medication -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Regularity of Medication:"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- TextInputLayout for Regularity -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            app:boxStrokeColor="@color/primary_color"
+            app:hintTextColor="@color/primary_color"
+            app:cursorColor="@color/primary_color"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edit_text_regularity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="13dp"
+                android:hint="Enter regularity"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Family History Section -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Family History of: Diabetes / Hypertension / Ischemic Heart Disease / Tuberculosis / Asthma / Any other"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp"
+            android:gravity="start"/>
+
+        <!-- Checkbox for Family History -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="16dp">
+            <CheckBox
+                android:id="@+id/checkbox_family_diabetes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Diabetes"/>
+            <CheckBox
+                android:id="@+id/checkbox_family_hypertension"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hypertension"/>
+            <CheckBox
+                android:id="@+id/checkbox_family_ischemic_heart_disease"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ischemic Heart Disease"/>
+            <CheckBox
+                android:id="@+id/checkbox_family_tuberculosis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tuberculosis"/>
+            <CheckBox
+                android:id="@+id/checkbox_family_asthma"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Asthma"/>
+            <CheckBox
+                android:id="@+id/checkbox_family_any_other"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Any other"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/nextButton"
+            android:layout_width="match_parent"
+            android:text="Next"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            android:backgroundTint="@color/primary_color"
+            android:layout_height="wrap_content">
+
+        </Button>
+
+    </LinearLayout>
+    </LinearLayout>
+</ScrollView>

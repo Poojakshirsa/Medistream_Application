@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- Toolbar that stays fixed at the top -->
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="School Health"
+        android:background="@color/primary_color"
+        app:titleTextColor="@color/white"
+        app:titleTextAppearance="@style/TextAppearance.Material3.ActionBar.Title"
+        app:layout_scrollFlags="scroll|enterAlways|enterAlwaysCollapsed"/>
+
+
+    <!-- ScrollView to handle the content scrolling -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:gravity="center_horizontal"
+                android:textColor="@color/primary_color"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:text="Physical Activity"
+                android:layout_height="wrap_content"/>
+
+            <!-- Question 1 -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1. Do you exercise at present?"
+                android:textStyle="bold"
+                android:paddingBottom="8dp" />
+
+            <RadioGroup
+                android:id="@+id/exerciseRadioGroup"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Yes" />
+                <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="No" />
+            </RadioGroup>
+
+            <!-- Question 2 -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2. How many times a week do you exercise for at least 30 minutes?"
+                android:textStyle="bold"
+                android:paddingTop="16dp"
+                android:paddingBottom="8dp" />
+
+            <RadioGroup
+                android:id="@+id/frequencyRadioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="5 – 7 times" />
+                <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="4 times" />
+                <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2 – 3 times" />
+                <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Less than once a week" />
+            </RadioGroup>
+
+            <!-- Question 3 -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3. If no exercise or less than once a week, then specify reason for not exercising (choose most suitable option):"
+                android:textStyle="bold"
+                android:paddingTop="16dp"
+                android:paddingBottom="8dp" />
+
+            <RadioGroup
+                android:id="@+id/reasonRadioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Not feel motivated enough for exercise" />
+                <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Too tired to exercise" />
+                <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="No time for exercise" />
+                <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="I am afraid of getting hurt" />
+                <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Any other (specify)" />
+            </RadioGroup>
+
+            <!-- Add the other questions here similarly -->
+
+            <Button
+                android:id="@+id/nextButton"
+                android:layout_width="match_parent"
+                android:text="Next"
+                android:textSize="17dp"
+                android:textStyle="bold"
+                android:backgroundTint="@color/primary_color"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
